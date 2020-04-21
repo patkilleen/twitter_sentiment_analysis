@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+   <comment>configuration for twitter sentiment anlysis project for COMP5118/CSI5140 winter 2020</comment>
+   <entry key="common.log.Logger.level">INFO</entry>
+   <entry key="common.root.path">path\to\project\root</entry>
+   
+   <entry key="dataset.id">STANFORD</entry>
+   
+   
+   <entry key="dataset.test.k-fold-cross-validation.k-value">10</entry>
+   <entry key="dataset.dev.k-fold-cross-validation.k-value">5</entry>
+   <entry key="dataset.test.using-k-fold-cross-validation-flag">false</entry>
+   <entry key="dataset.dev.using-k-fold-cross-validation-flag">true</entry>
+   
+
+   
+   
+   <entry key="dataset.normalization.remove-symboles-flag">false</entry>
+   
+   	
+   <entry key="classify.Classifier.stanford-NLP-jar-path">lib\stanford-corenlp-full-2018-10-05\*</entry>
+   <entry key="classify.Classifier.prop-file-path">input\tweet.prop</entry>
+ 
+   <entry key="classify.diversity.q-threshold">1</entry>
+   
+   <entry key="dataset.labels.neutral-tweets-included">true</entry>
+   <entry key="dataset.traing.random-sort-flag">false</entry>
+
+   
+   <entry key="output.fusion-testing-output-file-path">output\fusion-testing-dataset.txt</entry>
+   <entry key="output.fusion-training-output-file-path">output\fusion-training-dataset.txt</entry>
+   
+   
+   <entry key="fusion.r-script-executable-path">path\to\R\R-3.6.0\bin\Rscript.exe</entry>
+   <entry key="fusion.r-script-fusion-model-path">r\fusion-model.r</entry>
+   <entry key="fusion.hlms.alpha">0.05</entry>
+   
+
+
+   <entry key="input.train-data-file-path">output\clean-training-dataset.txt</entry>
+   <entry key="input.test-data-file-path">output\clean-testing-dataset.txt</entry>
+   <entry key="input.dev-data-file-path">output\clean-dev-dataset.txt</entry>
+   
+   <entry key="input.raw.test-data-file-path">input\stanford\raw-testing-dataset-with-neutral-labels.csv</entry>
+   <entry key="input.raw.dev-data-file-path"></entry>
+   <entry key="input.raw.train-data-file-path">input\air-line\Tweets.csv.rand</entry>
+   <entry key="tweet.stop-word-input-file">input\stopwords\stopwords.txt</entry>
+   
+   
+   <!--<entry key="tweet.positive-emoticon-list.0">:-)</entry>
+   <entry key="tweet.positive-emoticon-list.1">:)</entry>
+   <entry key="tweet.positive-emoticon-list.2">=)</entry>
+   <entry key="tweet.positive-emoticon-list.3">:D</entry>
+   
+   <entry key="tweet.negative-emoticon-list.0">:-(</entry>
+   <entry key="tweet.negative-emoticon-list.1">:(</entry>
+   <entry key="tweet.negative-emoticon-list.2">=(</entry>-->
+   
+   <entry key="tweet.positive-emoticon-list.0">&lt;3</entry>
+   <entry key="tweet.positive-emoticon-list.1">:-)</entry>
+   <entry key="tweet.positive-emoticon-list.2">:)</entry>
+   <entry key="tweet.positive-emoticon-list.3">=)</entry>
+   <entry key="tweet.positive-emoticon-list.4">:D</entry>
+   <entry key="tweet.positive-emoticon-list.5">:o)</entry>
+   <entry key="tweet.positive-emoticon-list.6">:]</entry>
+   <entry key="tweet.positive-emoticon-list.7">:3</entry>
+   <entry key="tweet.positive-emoticon-list.8">:c)</entry>
+   <entry key="tweet.positive-emoticon-list.9">:></entry>
+   <entry key="tweet.positive-emoticon-list.10">=]</entry>
+   <entry key="tweet.positive-emoticon-list.11">8)</entry>
+   <entry key="tweet.positive-emoticon-list.12">=)</entry>
+   <entry key="tweet.positive-emoticon-list.13">:}</entry>
+   <entry key="tweet.positive-emoticon-list.14">:^)</entry>
+   <entry key="tweet.positive-emoticon-list.15">:っ)</entry>
+   <entry key="tweet.positive-emoticon-list.16">:-D</entry>
+   <entry key="tweet.positive-emoticon-list.17">8-D</entry>
+   <entry key="tweet.positive-emoticon-list.18">8D</entry>
+   <entry key="tweet.positive-emoticon-list.19">x-D</entry>
+   <entry key="tweet.positive-emoticon-list.20">xD</entry>
+   <entry key="tweet.positive-emoticon-list.21">X-D</entry>
+   <entry key="tweet.positive-emoticon-list.22">XD</entry>
+   <entry key="tweet.positive-emoticon-list.23">=-D</entry>
+   <entry key="tweet.positive-emoticon-list.24">=D</entry>
+   <entry key="tweet.positive-emoticon-list.25">=-3</entry>
+   <entry key="tweet.positive-emoticon-list.26">=3</entry>
+   <entry key="tweet.positive-emoticon-list.27">B^D</entry>
+   <entry key="tweet.positive-emoticon-list.28">:-))</entry>
+   <entry key="tweet.positive-emoticon-list.29">&gt;:)</entry>
+   <entry key="tweet.positive-emoticon-list.30">&gt;;)</entry>
+   <entry key="tweet.positive-emoticon-list.31">&gt;:-)</entry>
+   <entry key="tweet.positive-emoticon-list.32">}:-)</entry>
+   <entry key="tweet.positive-emoticon-list.33">|;-)</entry>
+   <entry key="tweet.positive-emoticon-list.34">}:)</entry>
+   <entry key="tweet.positive-emoticon-list.35">3:-)</entry>
+   <entry key="tweet.positive-emoticon-list.36">3:)</entry>
+   <entry key="tweet.positive-emoticon-list.37">:-J	</entry>
+   <entry key="tweet.positive-emoticon-list.38">:-))</entry>
+   <entry key="tweet.positive-emoticon-list.39">:'-)</entry>
+   <entry key="tweet.positive-emoticon-list.40">:')</entry>
+   <entry key="tweet.positive-emoticon-list.41">;-)</entry>
+   <entry key="tweet.positive-emoticon-list.42">;)</entry>
+   <entry key="tweet.positive-emoticon-list.43">;-]</entry>
+   <entry key="tweet.positive-emoticon-list.44">;]</entry>
+   <entry key="tweet.positive-emoticon-list.45">;D</entry>
+   <entry key="tweet.positive-emoticon-list.46">;^)</entry>
+   <entry key="tweet.positive-emoticon-list.47">&gt;:P</entry>
+   <entry key="tweet.positive-emoticon-list.48">:-P</entry>
+   <entry key="tweet.positive-emoticon-list.49">:P</entry>
+   <entry key="tweet.positive-emoticon-list.50">:-p</entry>
+   <entry key="tweet.positive-emoticon-list.51">:p</entry>
+   <entry key="tweet.positive-emoticon-list.52">=p</entry>
+   <entry key="tweet.positive-emoticon-list.53">:-b</entry>
+   <entry key="tweet.positive-emoticon-list.54">:b</entry>
+   <entry key="tweet.positive-emoticon-list.55">d:</entry>
+   <entry key="tweet.positive-emoticon-list.56">O:-)</entry>
+   <entry key="tweet.positive-emoticon-list.57">0:-3</entry>
+   <entry key="tweet.positive-emoticon-list.58">0:3</entry>
+   <entry key="tweet.positive-emoticon-list.59">0:-)</entry>
+   <entry key="tweet.positive-emoticon-list.60">0:)</entry>
+   <entry key="tweet.positive-emoticon-list.61">0;^)</entry>
+   
+   
+   
+   <entry key="tweet.negative-emoticon-list.0">:-(</entry>
+   <entry key="tweet.negative-emoticon-list.1">)-:</entry>
+   <entry key="tweet.negative-emoticon-list.2">:(</entry>
+   <entry key="tweet.negative-emoticon-list.3">):</entry>
+   <entry key="tweet.negative-emoticon-list.4">=(</entry>
+   <entry key="tweet.negative-emoticon-list.5">)=</entry>
+   <entry key="tweet.negative-emoticon-list.6">&gt;:[</entry>
+   <entry key="tweet.negative-emoticon-list.7">]:&lt;</entry>
+   <entry key="tweet.negative-emoticon-list.8">:-c</entry>
+   <entry key="tweet.negative-emoticon-list.9">:c</entry>
+   <entry key="tweet.negative-emoticon-list.10">:-&lt;</entry>
+   <entry key="tweet.negative-emoticon-list.11">&gt;-:</entry>
+   <entry key="tweet.negative-emoticon-list.12">:&lt;</entry>
+   <entry key="tweet.negative-emoticon-list.13">&gt;:</entry>
+   <entry key="tweet.negative-emoticon-list.14">:-[</entry>
+   <entry key="tweet.negative-emoticon-list.15">]-:</entry>
+   <entry key="tweet.negative-emoticon-list.16">:[</entry>
+   <entry key="tweet.negative-emoticon-list.17">]:</entry>
+   <entry key="tweet.negative-emoticon-list.18">:{</entry>	
+   <entry key="tweet.negative-emoticon-list.19">}:</entry>	
+   <entry key="tweet.negative-emoticon-list.20">;(</entry>
+   <entry key="tweet.negative-emoticon-list.21">);</entry>
+   <entry key="tweet.negative-emoticon-list.22">:-||</entry>
+   <entry key="tweet.negative-emoticon-list.23">||-:</entry>
+   <entry key="tweet.negative-emoticon-list.24">&gt;:(</entry>
+   <entry key="tweet.negative-emoticon-list.25">):&lt;</entry>
+   <entry key="tweet.negative-emoticon-list.26">:'-(</entry>
+   <entry key="tweet.negative-emoticon-list.27">)-':</entry>
+   <entry key="tweet.negative-emoticon-list.28">:'(</entry>
+   <entry key="tweet.negative-emoticon-list.29">)':</entry>
+   <entry key="tweet.negative-emoticon-list.30">D:&lt;</entry>
+   <entry key="tweet.negative-emoticon-list.31">D:</entry>
+   <entry key="tweet.negative-emoticon-list.32">D8</entry>
+   <entry key="tweet.negative-emoticon-list.33">D;</entry>
+   <entry key="tweet.negative-emoticon-list.34">D=</entry>
+   <entry key="tweet.negative-emoticon-list.35">DX</entry>
+   <entry key="tweet.negative-emoticon-list.36">v.v</entry>
+   <entry key="tweet.negative-emoticon-list.37">D-':</entry>
+   <entry key="tweet.negative-emoticon-list.38">&gt;:\</entry>
+   <entry key="tweet.negative-emoticon-list.39">\:&lt;</entry>
+   <entry key="tweet.negative-emoticon-list.40">&gt;:/</entry>
+   <entry key="tweet.negative-emoticon-list.41">/:&lt;</entry>
+   <entry key="tweet.negative-emoticon-list.42">:-/</entry>
+   <entry key="tweet.negative-emoticon-list.43">/-:</entry>
+   <entry key="tweet.negative-emoticon-list.44">:/</entry>
+   <entry key="tweet.negative-emoticon-list.45">/:</entry>
+   <entry key="tweet.negative-emoticon-list.46">:\</entry>
+   <entry key="tweet.negative-emoticon-list.47">\:</entry>
+   <entry key="tweet.negative-emoticon-list.48">=/</entry>
+   <entry key="tweet.negative-emoticon-list.49">/=</entry>
+   <entry key="tweet.negative-emoticon-list.50">=\</entry>
+   <entry key="tweet.negative-emoticon-list.51">\=</entry>
+   <entry key="tweet.negative-emoticon-list.52">:L</entry>
+   <entry key="tweet.negative-emoticon-list.53">=L</entry>
+   <entry key="tweet.negative-emoticon-list.54">:S</entry>
+   <entry key="tweet.negative-emoticon-list.55">S:</entry>
+   <entry key="tweet.negative-emoticon-list.56">&gt;.&lt;</entry>
+   <entry key="tweet.negative-emoticon-list.57">&lt;/3</entry>
+   
+</properties>
+   
